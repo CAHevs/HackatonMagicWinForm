@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblPVJ1 = new System.Windows.Forms.Label();
-            this.lblPVJ2 = new System.Windows.Forms.Label();
-            this.btnMinusJ1 = new System.Windows.Forms.Button();
-            this.btnPlusJ1 = new System.Windows.Forms.Button();
-            this.btnPlusJ2 = new System.Windows.Forms.Button();
-            this.btnMinusJ2 = new System.Windows.Forms.Button();
             this.txtNameP1 = new System.Windows.Forms.TextBox();
             this.txtNameP2 = new System.Windows.Forms.TextBox();
             this.lblDice6Value = new System.Windows.Forms.Label();
@@ -52,90 +46,33 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearchCard = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblInfoMarqueurs = new System.Windows.Forms.Label();
+            this.nupJ1 = new System.Windows.Forms.NumericUpDown();
+            this.lblLifeP1 = new System.Windows.Forms.Label();
+            this.nupJ2 = new System.Windows.Forms.NumericUpDown();
+            this.lblLifeP2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupJ2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblPVJ1
-            // 
-            this.lblPVJ1.AutoSize = true;
-            this.lblPVJ1.Location = new System.Drawing.Point(252, 20);
-            this.lblPVJ1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPVJ1.Name = "lblPVJ1";
-            this.lblPVJ1.Size = new System.Drawing.Size(19, 13);
-            this.lblPVJ1.TabIndex = 0;
-            this.lblPVJ1.Text = "20";
-            // 
-            // lblPVJ2
-            // 
-            this.lblPVJ2.AutoSize = true;
-            this.lblPVJ2.Location = new System.Drawing.Point(454, 20);
-            this.lblPVJ2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblPVJ2.Name = "lblPVJ2";
-            this.lblPVJ2.Size = new System.Drawing.Size(19, 13);
-            this.lblPVJ2.TabIndex = 1;
-            this.lblPVJ2.Text = "20";
-            // 
-            // btnMinusJ1
-            // 
-            this.btnMinusJ1.Location = new System.Drawing.Point(192, 18);
-            this.btnMinusJ1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMinusJ1.Name = "btnMinusJ1";
-            this.btnMinusJ1.Size = new System.Drawing.Size(56, 19);
-            this.btnMinusJ1.TabIndex = 2;
-            this.btnMinusJ1.Text = "-";
-            this.btnMinusJ1.UseVisualStyleBackColor = true;
-            this.btnMinusJ1.Click += new System.EventHandler(this.btnMinusJ1_Click);
-            // 
-            // btnPlusJ1
-            // 
-            this.btnPlusJ1.Location = new System.Drawing.Point(275, 18);
-            this.btnPlusJ1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnPlusJ1.Name = "btnPlusJ1";
-            this.btnPlusJ1.Size = new System.Drawing.Size(56, 19);
-            this.btnPlusJ1.TabIndex = 3;
-            this.btnPlusJ1.Text = "+";
-            this.btnPlusJ1.UseVisualStyleBackColor = true;
-            this.btnPlusJ1.Click += new System.EventHandler(this.btnPlusJ1_Click);
-            // 
-            // btnPlusJ2
-            // 
-            this.btnPlusJ2.Location = new System.Drawing.Point(477, 18);
-            this.btnPlusJ2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnPlusJ2.Name = "btnPlusJ2";
-            this.btnPlusJ2.Size = new System.Drawing.Size(56, 19);
-            this.btnPlusJ2.TabIndex = 4;
-            this.btnPlusJ2.Text = "+";
-            this.btnPlusJ2.UseVisualStyleBackColor = true;
-            this.btnPlusJ2.Click += new System.EventHandler(this.btnPlusJ2_Click);
-            // 
-            // btnMinusJ2
-            // 
-            this.btnMinusJ2.Location = new System.Drawing.Point(394, 18);
-            this.btnMinusJ2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnMinusJ2.Name = "btnMinusJ2";
-            this.btnMinusJ2.Size = new System.Drawing.Size(56, 19);
-            this.btnMinusJ2.TabIndex = 5;
-            this.btnMinusJ2.Text = "-";
-            this.btnMinusJ2.UseVisualStyleBackColor = true;
-            this.btnMinusJ2.Click += new System.EventHandler(this.btnMinusJ2_Click);
             // 
             // txtNameP1
             // 
-            this.txtNameP1.Location = new System.Drawing.Point(191, 52);
-            this.txtNameP1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNameP1.Location = new System.Drawing.Point(255, 64);
+            this.txtNameP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameP1.Name = "txtNameP1";
-            this.txtNameP1.Size = new System.Drawing.Size(140, 20);
+            this.txtNameP1.Size = new System.Drawing.Size(185, 22);
             this.txtNameP1.TabIndex = 6;
             this.txtNameP1.Text = "Player 1";
             this.txtNameP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNameP2
             // 
-            this.txtNameP2.Location = new System.Drawing.Point(393, 52);
-            this.txtNameP2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNameP2.Location = new System.Drawing.Point(524, 64);
+            this.txtNameP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameP2.Name = "txtNameP2";
-            this.txtNameP2.Size = new System.Drawing.Size(140, 20);
+            this.txtNameP2.Size = new System.Drawing.Size(185, 22);
             this.txtNameP2.TabIndex = 7;
             this.txtNameP2.Text = "Player 2";
             this.txtNameP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -143,39 +80,36 @@
             // lblDice6Value
             // 
             this.lblDice6Value.AutoSize = true;
-            this.lblDice6Value.Location = new System.Drawing.Point(273, 98);
-            this.lblDice6Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDice6Value.Location = new System.Drawing.Point(364, 121);
             this.lblDice6Value.Name = "lblDice6Value";
-            this.lblDice6Value.Size = new System.Drawing.Size(10, 13);
+            this.lblDice6Value.Size = new System.Drawing.Size(13, 17);
             this.lblDice6Value.TabIndex = 11;
             this.lblDice6Value.Text = "-";
             // 
             // lblDice20Value
             // 
             this.lblDice20Value.AutoSize = true;
-            this.lblDice20Value.Location = new System.Drawing.Point(273, 139);
-            this.lblDice20Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDice20Value.Location = new System.Drawing.Point(364, 171);
             this.lblDice20Value.Name = "lblDice20Value";
-            this.lblDice20Value.Size = new System.Drawing.Size(10, 13);
+            this.lblDice20Value.Size = new System.Drawing.Size(13, 17);
             this.lblDice20Value.TabIndex = 12;
             this.lblDice20Value.Text = "-";
             // 
             // lblDiceXValue
             // 
             this.lblDiceXValue.AutoSize = true;
-            this.lblDiceXValue.Location = new System.Drawing.Point(273, 181);
-            this.lblDiceXValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDiceXValue.Location = new System.Drawing.Point(364, 223);
             this.lblDiceXValue.Name = "lblDiceXValue";
-            this.lblDiceXValue.Size = new System.Drawing.Size(10, 13);
+            this.lblDiceXValue.Size = new System.Drawing.Size(13, 17);
             this.lblDiceXValue.TabIndex = 13;
             this.lblDiceXValue.Text = "-";
             // 
             // btnRoll6
             // 
-            this.btnRoll6.Location = new System.Drawing.Point(232, 95);
-            this.btnRoll6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRoll6.Location = new System.Drawing.Point(309, 117);
+            this.btnRoll6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRoll6.Name = "btnRoll6";
-            this.btnRoll6.Size = new System.Drawing.Size(37, 19);
+            this.btnRoll6.Size = new System.Drawing.Size(49, 23);
             this.btnRoll6.TabIndex = 14;
             this.btnRoll6.Text = "Roll";
             this.btnRoll6.UseVisualStyleBackColor = true;
@@ -183,10 +117,10 @@
             // 
             // btnRoll20
             // 
-            this.btnRoll20.Location = new System.Drawing.Point(232, 136);
-            this.btnRoll20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRoll20.Location = new System.Drawing.Point(309, 167);
+            this.btnRoll20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRoll20.Name = "btnRoll20";
-            this.btnRoll20.Size = new System.Drawing.Size(37, 19);
+            this.btnRoll20.Size = new System.Drawing.Size(49, 23);
             this.btnRoll20.TabIndex = 15;
             this.btnRoll20.Text = "Roll";
             this.btnRoll20.UseVisualStyleBackColor = true;
@@ -194,10 +128,10 @@
             // 
             // BtnRollX
             // 
-            this.BtnRollX.Location = new System.Drawing.Point(232, 179);
-            this.BtnRollX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnRollX.Location = new System.Drawing.Point(309, 220);
+            this.BtnRollX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnRollX.Name = "BtnRollX";
-            this.BtnRollX.Size = new System.Drawing.Size(37, 19);
+            this.BtnRollX.Size = new System.Drawing.Size(49, 23);
             this.BtnRollX.TabIndex = 16;
             this.BtnRollX.Text = "Roll";
             this.BtnRollX.UseVisualStyleBackColor = true;
@@ -205,10 +139,10 @@
             // 
             // txtDiceX
             // 
-            this.txtDiceX.Location = new System.Drawing.Point(194, 179);
-            this.txtDiceX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiceX.Location = new System.Drawing.Point(259, 220);
+            this.txtDiceX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDiceX.Name = "txtDiceX";
-            this.txtDiceX.Size = new System.Drawing.Size(34, 20);
+            this.txtDiceX.Size = new System.Drawing.Size(44, 22);
             this.txtDiceX.TabIndex = 17;
             // 
             // gameTime
@@ -217,10 +151,10 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(18, 18);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStart.Location = new System.Drawing.Point(24, 22);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(46, 19);
+            this.btnStart.Size = new System.Drawing.Size(61, 23);
             this.btnStart.TabIndex = 19;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -229,35 +163,34 @@
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(77, 20);
-            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTime.Location = new System.Drawing.Point(103, 25);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(10, 13);
+            this.lblTime.Size = new System.Drawing.Size(13, 17);
             this.lblTime.TabIndex = 20;
             this.lblTime.Text = "-";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(394, 93);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(525, 114);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
             this.textBox1.TabIndex = 21;
             // 
             // lblInfoCarte
             // 
             this.lblInfoCarte.AutoSize = true;
-            this.lblInfoCarte.Location = new System.Drawing.Point(393, 128);
-            this.lblInfoCarte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblInfoCarte.Location = new System.Drawing.Point(524, 158);
             this.lblInfoCarte.Name = "lblInfoCarte";
-            this.lblInfoCarte.Size = new System.Drawing.Size(115, 13);
+            this.lblInfoCarte.Size = new System.Drawing.Size(153, 17);
             this.lblInfoCarte.TabIndex = 22;
             this.lblInfoCarte.Text = "Information de la carte ";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.dice;
-            this.pictureBox1.Location = new System.Drawing.Point(190, 93);
+            this.pictureBox1.Location = new System.Drawing.Point(253, 114);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -266,11 +199,12 @@
             // 
             // btnSearchCard
             // 
+            this.btnSearchCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSearchCard.Image = global::HackatonMagic.Properties.Resources.search;
-            this.btnSearchCard.Location = new System.Drawing.Point(537, 92);
-            this.btnSearchCard.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearchCard.Location = new System.Drawing.Point(715, 108);
+            this.btnSearchCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSearchCard.Name = "btnSearchCard";
-            this.btnSearchCard.Size = new System.Drawing.Size(25, 22);
+            this.btnSearchCard.Size = new System.Drawing.Size(43, 35);
             this.btnSearchCard.TabIndex = 23;
             this.btnSearchCard.UseVisualStyleBackColor = true;
             this.btnSearchCard.Click += new System.EventHandler(this.btnSearchCard_Click);
@@ -278,18 +212,90 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HackatonMagic.Properties.Resources.spinedown20;
-            this.pictureBox2.Location = new System.Drawing.Point(191, 130);
+            this.pictureBox2.Location = new System.Drawing.Point(255, 160);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
             // 
+            // lblInfoMarqueurs
+            // 
+            this.lblInfoMarqueurs.AutoSize = true;
+            this.lblInfoMarqueurs.Location = new System.Drawing.Point(255, 266);
+            this.lblInfoMarqueurs.Name = "lblInfoMarqueurs";
+            this.lblInfoMarqueurs.Size = new System.Drawing.Size(76, 17);
+            this.lblInfoMarqueurs.TabIndex = 26;
+            this.lblInfoMarqueurs.Text = "Marqueurs";
+            // 
+            // nupJ1
+            // 
+            this.nupJ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nupJ1.Location = new System.Drawing.Point(357, 12);
+            this.nupJ1.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.nupJ1.Name = "nupJ1";
+            this.nupJ1.Size = new System.Drawing.Size(83, 36);
+            this.nupJ1.TabIndex = 27;
+            this.nupJ1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nupJ1.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            // 
+            // lblLifeP1
+            // 
+            this.lblLifeP1.AutoSize = true;
+            this.lblLifeP1.Location = new System.Drawing.Point(250, 25);
+            this.lblLifeP1.Name = "lblLifeP1";
+            this.lblLifeP1.Size = new System.Drawing.Size(101, 17);
+            this.lblLifeP1.TabIndex = 28;
+            this.lblLifeP1.Text = "Point de vie J1";
+            // 
+            // nupJ2
+            // 
+            this.nupJ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nupJ2.Location = new System.Drawing.Point(629, 12);
+            this.nupJ2.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
+            this.nupJ2.Name = "nupJ2";
+            this.nupJ2.Size = new System.Drawing.Size(83, 36);
+            this.nupJ2.TabIndex = 29;
+            this.nupJ2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nupJ2.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            // 
+            // lblLifeP2
+            // 
+            this.lblLifeP2.AutoSize = true;
+            this.lblLifeP2.Location = new System.Drawing.Point(522, 25);
+            this.lblLifeP2.Name = "lblLifeP2";
+            this.lblLifeP2.Size = new System.Drawing.Size(101, 17);
+            this.lblLifeP2.TabIndex = 30;
+            this.lblLifeP2.Text = "Point de vie J2";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.lblLifeP2);
+            this.Controls.Add(this.nupJ2);
+            this.Controls.Add(this.lblLifeP1);
+            this.Controls.Add(this.nupJ1);
+            this.Controls.Add(this.lblInfoMarqueurs);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSearchCard);
@@ -306,30 +312,19 @@
             this.Controls.Add(this.lblDice6Value);
             this.Controls.Add(this.txtNameP2);
             this.Controls.Add(this.txtNameP1);
-            this.Controls.Add(this.btnMinusJ2);
-            this.Controls.Add(this.btnPlusJ2);
-            this.Controls.Add(this.btnPlusJ1);
-            this.Controls.Add(this.btnMinusJ1);
-            this.Controls.Add(this.lblPVJ2);
-            this.Controls.Add(this.lblPVJ1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Hackaton Magic";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupJ2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblPVJ1;
-        private System.Windows.Forms.Label lblPVJ2;
-        private System.Windows.Forms.Button btnMinusJ1;
-        private System.Windows.Forms.Button btnPlusJ1;
-        private System.Windows.Forms.Button btnPlusJ2;
-        private System.Windows.Forms.Button btnMinusJ2;
         private System.Windows.Forms.TextBox txtNameP1;
         private System.Windows.Forms.TextBox txtNameP2;
         private System.Windows.Forms.Label lblDice6Value;
@@ -347,6 +342,11 @@
         private System.Windows.Forms.Button btnSearchCard;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblInfoMarqueurs;
+        private System.Windows.Forms.NumericUpDown nupJ1;
+        private System.Windows.Forms.Label lblLifeP1;
+        private System.Windows.Forms.NumericUpDown nupJ2;
+        private System.Windows.Forms.Label lblLifeP2;
     }
 }
 
