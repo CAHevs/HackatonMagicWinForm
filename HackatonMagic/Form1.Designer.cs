@@ -302,7 +302,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HackatonMagic.Properties.Resources.spinedown20;
-            this.pictureBox2.Location = new System.Drawing.Point(254, 163);
+            this.pictureBox2.Location = new System.Drawing.Point(273, 165);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 25);
@@ -313,7 +313,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.dice;
-            this.pictureBox1.Location = new System.Drawing.Point(254, 118);
+            this.pictureBox1.Location = new System.Drawing.Point(272, 122);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
@@ -325,7 +325,7 @@
             // 
             this.btnSearchCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSearchCard.Image = global::HackatonMagic.Properties.Resources.search;
-            this.btnSearchCard.Location = new System.Drawing.Point(725, 104);
+            this.btnSearchCard.Location = new System.Drawing.Point(733, 104);
             this.btnSearchCard.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.btnSearchCard.Name = "btnSearchCard";
             this.btnSearchCard.Size = new System.Drawing.Size(57, 43);
@@ -560,12 +560,13 @@
             // 
             // btnAddCounter
             // 
-            this.btnAddCounter.Location = new System.Drawing.Point(258, 320);
+            this.btnAddCounter.Location = new System.Drawing.Point(254, 296);
             this.btnAddCounter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAddCounter.Name = "btnAddCounter";
-            this.btnAddCounter.Size = new System.Drawing.Size(100, 28);
+            this.btnAddCounter.Size = new System.Drawing.Size(164, 28);
             this.btnAddCounter.TabIndex = 58;
-            this.btnAddCounter.Click += new System.EventHandler(this.btnAddCounter_Click_1);
+            this.btnAddCounter.Text = "Ajouter un marqueur";
+            this.btnAddCounter.Click += new System.EventHandler(this.btnAddCounter_Click);
             // 
             // BluePlus
             // 
