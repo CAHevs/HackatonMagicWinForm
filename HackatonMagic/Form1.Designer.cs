@@ -51,6 +51,8 @@
             this.lblLifeP1 = new System.Windows.Forms.Label();
             this.nupJ2 = new System.Windows.Forms.NumericUpDown();
             this.lblLifeP2 = new System.Windows.Forms.Label();
+            this.gbCounters = new System.Windows.Forms.GroupBox();
+            this.btnAddCounter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).BeginInit();
@@ -285,12 +287,32 @@
             this.lblLifeP2.TabIndex = 30;
             this.lblLifeP2.Text = "Point de vie J2";
             // 
+            // gbCounters
+            // 
+            this.gbCounters.Location = new System.Drawing.Point(259, 324);
+            this.gbCounters.Name = "gbCounters";
+            this.gbCounters.Size = new System.Drawing.Size(453, 148);
+            this.gbCounters.TabIndex = 31;
+            this.gbCounters.TabStop = false;
+            // 
+            // btnAddCounter
+            // 
+            this.btnAddCounter.Location = new System.Drawing.Point(255, 286);
+            this.btnAddCounter.Name = "btnAddCounter";
+            this.btnAddCounter.Size = new System.Drawing.Size(165, 33);
+            this.btnAddCounter.TabIndex = 32;
+            this.btnAddCounter.Text = "Ajouter un marqueur";
+            this.btnAddCounter.UseVisualStyleBackColor = true;
+            this.btnAddCounter.Click += new System.EventHandler(this.btnAddCounter_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.btnAddCounter);
+            this.Controls.Add(this.gbCounters);
             this.Controls.Add(this.lblLifeP2);
             this.Controls.Add(this.nupJ2);
             this.Controls.Add(this.lblLifeP1);
@@ -347,6 +369,8 @@
         private System.Windows.Forms.Label lblLifeP1;
         private System.Windows.Forms.NumericUpDown nupJ2;
         private System.Windows.Forms.Label lblLifeP2;
+        private System.Windows.Forms.GroupBox gbCounters;
+        private System.Windows.Forms.Button btnAddCounter;
     }
 }
 

@@ -109,5 +109,12 @@ namespace HackatonMagic
         {
 
         }
+
+        // Méthode pour ajouter un marqueur d'un type donnée dans une liste déroulante, à une carte choisie par le joueur
+        // avec un nombre de marqueur donnée par le joueur
+        private void btnAddCounter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
