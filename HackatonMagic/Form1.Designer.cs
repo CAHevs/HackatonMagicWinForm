@@ -143,7 +143,7 @@
             // lblDice6Value
             // 
             this.lblDice6Value.AutoSize = true;
-            this.lblDice6Value.Location = new System.Drawing.Point(273, 98);
+            this.lblDice6Value.Location = new System.Drawing.Point(283, 98);
             this.lblDice6Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDice6Value.Name = "lblDice6Value";
             this.lblDice6Value.Size = new System.Drawing.Size(10, 13);
@@ -153,7 +153,7 @@
             // lblDice20Value
             // 
             this.lblDice20Value.AutoSize = true;
-            this.lblDice20Value.Location = new System.Drawing.Point(273, 139);
+            this.lblDice20Value.Location = new System.Drawing.Point(283, 139);
             this.lblDice20Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDice20Value.Name = "lblDice20Value";
             this.lblDice20Value.Size = new System.Drawing.Size(10, 13);
@@ -163,7 +163,7 @@
             // lblDiceXValue
             // 
             this.lblDiceXValue.AutoSize = true;
-            this.lblDiceXValue.Location = new System.Drawing.Point(273, 181);
+            this.lblDiceXValue.Location = new System.Drawing.Point(283, 182);
             this.lblDiceXValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDiceXValue.Name = "lblDiceXValue";
             this.lblDiceXValue.Size = new System.Drawing.Size(10, 13);
@@ -205,7 +205,7 @@
             // 
             // txtDiceX
             // 
-            this.txtDiceX.Location = new System.Drawing.Point(194, 179);
+            this.txtDiceX.Location = new System.Drawing.Point(190, 178);
             this.txtDiceX.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDiceX.Name = "txtDiceX";
             this.txtDiceX.Size = new System.Drawing.Size(34, 20);
