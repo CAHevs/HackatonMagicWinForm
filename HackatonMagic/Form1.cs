@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace HackatonMagic
 {
     public partial class Form1 : Form
@@ -21,7 +22,6 @@ namespace HackatonMagic
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void btnMinusJ1_Click(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace HackatonMagic
             pvJ2 = 20;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRoll6_Click(object sender, EventArgs e)
         {
 
         }
