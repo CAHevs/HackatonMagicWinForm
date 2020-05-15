@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblPVJ1 = new System.Windows.Forms.Label();
             this.lblPVJ2 = new System.Windows.Forms.Label();
             this.btnMinusJ1 = new System.Windows.Forms.Button();
@@ -36,8 +37,6 @@
             this.btnMinusJ2 = new System.Windows.Forms.Button();
             this.txtNameP1 = new System.Windows.Forms.TextBox();
             this.txtNameP2 = new System.Windows.Forms.TextBox();
-            this.lblDice6 = new System.Windows.Forms.Label();
-            this.lblDice20 = new System.Windows.Forms.Label();
             this.lblDice6Value = new System.Windows.Forms.Label();
             this.lblDice20Value = new System.Windows.Forms.Label();
             this.lblDiceXValue = new System.Windows.Forms.Label();
@@ -45,6 +44,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtDiceX = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gameTime = new System.Windows.Forms.Timer(this.components);
+            this.btnStart = new System.Windows.Forms.Button();
+            this.lblTime = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblPVJ1
@@ -121,24 +125,6 @@
             this.txtNameP2.TabIndex = 7;
             this.txtNameP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lblDice6
-            // 
-            this.lblDice6.AutoSize = true;
-            this.lblDice6.Location = new System.Drawing.Point(256, 120);
-            this.lblDice6.Name = "lblDice6";
-            this.lblDice6.Size = new System.Drawing.Size(46, 17);
-            this.lblDice6.TabIndex = 8;
-            this.lblDice6.Text = "dice 6";
-            // 
-            // lblDice20
-            // 
-            this.lblDice20.AutoSize = true;
-            this.lblDice20.Location = new System.Drawing.Point(256, 151);
-            this.lblDice20.Name = "lblDice20";
-            this.lblDice20.Size = new System.Drawing.Size(54, 17);
-            this.lblDice20.TabIndex = 9;
-            this.lblDice20.Text = "dice 20";
-            // 
             // lblDice6Value
             // 
             this.lblDice6Value.AutoSize = true;
@@ -151,7 +137,7 @@
             // lblDice20Value
             // 
             this.lblDice20Value.AutoSize = true;
-            this.lblDice20Value.Location = new System.Drawing.Point(364, 151);
+            this.lblDice20Value.Location = new System.Drawing.Point(364, 171);
             this.lblDice20Value.Name = "lblDice20Value";
             this.lblDice20Value.Size = new System.Drawing.Size(13, 17);
             this.lblDice20Value.TabIndex = 12;
@@ -160,7 +146,7 @@
             // lblDiceXValue
             // 
             this.lblDiceXValue.AutoSize = true;
-            this.lblDiceXValue.Location = new System.Drawing.Point(364, 183);
+            this.lblDiceXValue.Location = new System.Drawing.Point(364, 223);
             this.lblDiceXValue.Name = "lblDiceXValue";
             this.lblDiceXValue.Size = new System.Drawing.Size(13, 17);
             this.lblDiceXValue.TabIndex = 13;
@@ -177,7 +163,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(309, 148);
+            this.button2.Location = new System.Drawing.Point(309, 168);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(49, 23);
             this.button2.TabIndex = 15;
@@ -186,7 +172,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(309, 180);
+            this.button3.Location = new System.Drawing.Point(309, 220);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(49, 23);
             this.button3.TabIndex = 16;
@@ -195,16 +181,55 @@
             // 
             // txtDiceX
             // 
-            this.txtDiceX.Location = new System.Drawing.Point(259, 180);
+            this.txtDiceX.Location = new System.Drawing.Point(259, 220);
             this.txtDiceX.Name = "txtDiceX";
             this.txtDiceX.Size = new System.Drawing.Size(44, 22);
             this.txtDiceX.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.spinedown20;
+            this.pictureBox1.Location = new System.Drawing.Point(242, 151);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gameTime
+            // 
+            this.gameTime.Interval = 1000;
+            // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(24, 22);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(62, 23);
+            this.btnStart.TabIndex = 19;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(103, 25);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(13, 17);
+            this.lblTime.TabIndex = 20;
+            this.lblTime.Text = "-";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtDiceX);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -212,8 +237,6 @@
             this.Controls.Add(this.lblDiceXValue);
             this.Controls.Add(this.lblDice20Value);
             this.Controls.Add(this.lblDice6Value);
-            this.Controls.Add(this.lblDice20);
-            this.Controls.Add(this.lblDice6);
             this.Controls.Add(this.txtNameP2);
             this.Controls.Add(this.txtNameP1);
             this.Controls.Add(this.btnMinusJ2);
@@ -224,6 +247,7 @@
             this.Controls.Add(this.lblPVJ1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,8 +263,6 @@
         private System.Windows.Forms.Button btnMinusJ2;
         private System.Windows.Forms.TextBox txtNameP1;
         private System.Windows.Forms.TextBox txtNameP2;
-        private System.Windows.Forms.Label lblDice6;
-        private System.Windows.Forms.Label lblDice20;
         private System.Windows.Forms.Label lblDice6Value;
         private System.Windows.Forms.Label lblDice20Value;
         private System.Windows.Forms.Label lblDiceXValue;
@@ -248,6 +270,10 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtDiceX;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer gameTime;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label lblTime;
     }
 }
 
