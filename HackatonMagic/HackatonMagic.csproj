@@ -138,8 +138,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\white.png" />
+    <None Include="images\storm.png" />
     <None Include="images\search.png" />
     <None Include="images\dice.png" />
+    <None Include="images\blue.png" />
+    <None Include="images\black.png" />
+    <None Include="images\red.png" />
+    <None Include="images\green.png" />
+    <None Include="images\colorless.png" />
     <Content Include="images\spinedown20.png" />
   </ItemGroup>
   <ItemGroup>
