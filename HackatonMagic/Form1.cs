@@ -265,5 +265,10 @@ namespace HackatonMagic
                 }
             }
           }
+
+        private void btnAddCounter_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
