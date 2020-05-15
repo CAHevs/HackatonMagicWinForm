@@ -176,6 +176,7 @@
             this.btnRoll20.TabIndex = 15;
             this.btnRoll20.Text = "Roll";
             this.btnRoll20.UseVisualStyleBackColor = true;
+            this.btnRoll20.Click += new System.EventHandler(this.btnRoll20_Click);
             // 
             // BtnRollX
             // 
@@ -186,6 +187,7 @@
             this.BtnRollX.TabIndex = 16;
             this.BtnRollX.Text = "Roll";
             this.BtnRollX.UseVisualStyleBackColor = true;
+            this.BtnRollX.Click += new System.EventHandler(this.BtnRollX_Click);
             // 
             // txtDiceX
             // 

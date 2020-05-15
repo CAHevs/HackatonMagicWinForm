@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace HackatonMagic
 {
     public partial class Form1 : Form
@@ -22,6 +21,16 @@ namespace HackatonMagic
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private int RollDice(int dice)
+        {
+            int value = 0;
+            Random rnd = new Random();
+
+            value = rnd.Next(1, dice + 1);
+
+            return value;
         }
 
         private void btnMinusJ1_Click(object sender, EventArgs e)
@@ -90,7 +99,21 @@ namespace HackatonMagic
 
         private void btnRoll6_Click(object sender, EventArgs e)
         {
+            lblDice6Value.Text = RollDice(6).ToString();
+        }
 
+        private void btnRoll20_Click(object sender, EventArgs e)
+        {
+            lblDice20Value.Text = RollDice(20).ToString();
+        }
+
+        private void BtnRollX_Click(object sender, EventArgs e)
+        {
+            int diceX;
+            if(int.TryParse(txtDiceX.Text, out diceX))
+            {
+                lblDiceXValue.Text = RollDice(diceX).ToString();
+            }
         }
     }
 }
