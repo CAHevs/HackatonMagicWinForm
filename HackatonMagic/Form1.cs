@@ -22,7 +22,10 @@ namespace HackatonMagic
         {
             InitializeComponent();
         }
-
+        
+        // Méthode permettant de simuler un lancer de dé
+        // Paramètre : 
+        // int dice : donne la valeur du dé (6, 20 ou X)
         private int RollDice(int dice)
         {
             int value = 0;
@@ -33,6 +36,8 @@ namespace HackatonMagic
             return value;
         }
 
+        // Méthode qui enlève des points de vie au joueur 1
+        // Si les points de vie deviennent inférieur ou égal à 0, la partie s'arrête
         private void btnMinusJ1_Click(object sender, EventArgs e)
         {
             pvJ1--;
@@ -43,12 +48,15 @@ namespace HackatonMagic
             }
         }
 
+        // Méthode qui ajoute des points de vie au joueur 1
         private void btnPlusJ1_Click(object sender, EventArgs e)
         {
             pvJ1++;
             lblPVJ1.Text = pvJ1.ToString();
         }
 
+        // Méthode qui enlève des points de vie au joueur 2
+        // Si les points de vie deviennent inférieur ou égal à 0, la partie s'arrête
         private void btnMinusJ2_Click(object sender, EventArgs e)
         {
             pvJ2--;
@@ -59,12 +67,14 @@ namespace HackatonMagic
             }
         }
 
+        // Méthode qui ajoute des points de vie au joueur 2
         private void btnPlusJ2_Click(object sender, EventArgs e)
         {
             pvJ2++;
             lblPVJ2.Text = pvJ2.ToString();
         }
 
+        // Méthode qui permet de "démarrer" une partie. Ajoute un Event sur le timer
         private void btnStart_Click(object sender, EventArgs e)
         {
             btnStart.Enabled = false;
@@ -72,6 +82,7 @@ namespace HackatonMagic
             gameTime.Start();
         }
 
+        // Méthode du timer qui incrémente une variable second et affiche le résultat dans lblTime
         private void gameTime_Tick(object sender, EventArgs e)
         {
             second++;
@@ -88,25 +99,33 @@ namespace HackatonMagic
             lblTime.Text = hour.ToString() + ":" + minute.ToString() + ":" + second.ToString();
         }
 
+        // Méthode qui permet de finir la partie et de réinitialliser les points de vie et le timer
         private void gameEnded()
         {
             gameTime.Stop();
             btnStart.Enabled = true;
+            second = 0;
             lblTime.Text = "-";
             pvJ1 = 20;
             pvJ2 = 20;
+            lblPVJ1.Text = pvJ1.ToString();
+            lblPVJ2.Text = pvJ2.ToString();
+
         }
 
+        // Appelle la méthode RollDice avec la valeur 6 et affiche le résultat dans lblDice6Value
         private void btnRoll6_Click(object sender, EventArgs e)
         {
             lblDice6Value.Text = RollDice(6).ToString();
         }
 
+        // Appelle la méthode RollDice avec la valeur 20 et affiche le résultat dans lblDice20Value
         private void btnRoll20_Click(object sender, EventArgs e)
         {
             lblDice20Value.Text = RollDice(20).ToString();
         }
 
+        // Appelle la méthode RollDice avec la valeur du txtDiceX et affiche le résultat dans lblDiceXValue
         private void BtnRollX_Click(object sender, EventArgs e)
         {
             int diceX;
@@ -114,6 +133,12 @@ namespace HackatonMagic
             {
                 lblDiceXValue.Text = RollDice(diceX).ToString();
             }
+        }
+
+        // Méthode pour aller chercher une carte dans la bd et afficher les info dans lblInfoCard
+        private void btnSearchCard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

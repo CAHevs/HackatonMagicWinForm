@@ -273,6 +273,7 @@
             this.btnSearchCard.Size = new System.Drawing.Size(25, 22);
             this.btnSearchCard.TabIndex = 23;
             this.btnSearchCard.UseVisualStyleBackColor = true;
+            this.btnSearchCard.Click += new System.EventHandler(this.btnSearchCard_Click);
             // 
             // pictureBox2
             // 
