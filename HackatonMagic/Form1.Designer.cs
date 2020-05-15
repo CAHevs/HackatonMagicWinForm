@@ -47,6 +47,9 @@
             this.gameTime = new System.Windows.Forms.Timer(this.components);
             this.btnStart = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lblInfoCarte = new System.Windows.Forms.Label();
+            this.btnSearchCard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPVJ1
@@ -221,11 +224,39 @@
             this.lblTime.TabIndex = 20;
             this.lblTime.Text = "-";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(525, 115);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.TabIndex = 21;
+            // 
+            // lblInfoCarte
+            // 
+            this.lblInfoCarte.AutoSize = true;
+            this.lblInfoCarte.Location = new System.Drawing.Point(524, 158);
+            this.lblInfoCarte.Name = "lblInfoCarte";
+            this.lblInfoCarte.Size = new System.Drawing.Size(153, 17);
+            this.lblInfoCarte.TabIndex = 22;
+            this.lblInfoCarte.Text = "Information de la carte ";
+            // 
+            // btnSearchCard
+            // 
+            this.btnSearchCard.Image = global::HackatonMagic.Properties.Resources.search;
+            this.btnSearchCard.Location = new System.Drawing.Point(716, 113);
+            this.btnSearchCard.Name = "btnSearchCard";
+            this.btnSearchCard.Size = new System.Drawing.Size(33, 27);
+            this.btnSearchCard.TabIndex = 23;
+            this.btnSearchCard.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSearchCard);
+            this.Controls.Add(this.lblInfoCarte);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtDiceX);
@@ -271,6 +302,9 @@
         private System.Windows.Forms.Timer gameTime;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblTime;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lblInfoCarte;
+        private System.Windows.Forms.Button btnSearchCard;
     }
 }
 

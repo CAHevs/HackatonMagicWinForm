@@ -138,6 +138,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\search.png" />
     <Content Include="images\spinedown20.png" />
   </ItemGroup>
   <ItemGroup>
