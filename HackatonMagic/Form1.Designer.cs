@@ -73,6 +73,9 @@
             this.lblLifeP1 = new System.Windows.Forms.Label();
             this.nupJ2 = new System.Windows.Forms.NumericUpDown();
             this.lblLifeP2 = new System.Windows.Forms.Label();
+            this.gbCounters = new System.Windows.Forms.GroupBox();
+            this.btnAddCounter = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BluePlus = new System.Windows.Forms.Button();
             this.WhitePlus = new System.Windows.Forms.Button();
             this.BlackPlus = new System.Windows.Forms.Button();
@@ -663,6 +666,9 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
+            this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.btnAddCounter);
+            this.Controls.Add(this.gbCounters);
             this.Controls.Add(this.lblLifeP2);
             this.Controls.Add(this.nupJ2);
             this.Controls.Add(this.lblLifeP1);
@@ -755,6 +761,8 @@
         private System.Windows.Forms.Button RedPlus;
         private System.Windows.Forms.Button GreenPlus;
         private System.Windows.Forms.Button ColorlessPlus;
+        private System.Windows.Forms.GroupBox gbCounters;
+        private System.Windows.Forms.Button btnAddCounter;
     }
 }
 
