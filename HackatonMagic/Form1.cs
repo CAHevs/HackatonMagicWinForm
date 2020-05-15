@@ -24,6 +24,7 @@ namespace HackatonMagic
             //Ajout de l'event sur le changement de valeur des NumericUpAndDown
             nupJ1.ValueChanged += new EventHandler(lifeChanged);
             nupJ2.ValueChanged += new EventHandler(lifeChanged);
+            dataGridView1.CellClick += new DataGridViewCellEventHandler(dataGridView1_CellClick);
         }
         
         // Méthode permettant de simuler un lancer de dé
@@ -262,8 +263,26 @@ namespace HackatonMagic
                     cardName = addCounter._cardName;
                     counterType = addCounter._counterType;
                     nbreCounter = addCounter._nbreCounter;
+                    string[] row = new String[] { cardName, counterType, "-", nbreCounter.ToString(), "+" };
+                    dataGridView1.Rows.Add(row);
+
                 }
             }
-          }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var currentRow = dataGridView1.CurrentRow;
+            int currentCounter = int.Parse(currentRow.Cells[3].Value.ToString());
+            if (e.ColumnIndex == 2)
+            { 
+                currentCounter--;
+            }
+            else if(e.ColumnIndex == 4)
+            {
+                currentCounter++;
+            }
+            currentRow.Cells[3].Value = currentCounter;
+        }
     }
 }
