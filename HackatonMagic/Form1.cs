@@ -87,5 +87,10 @@ namespace HackatonMagic
             pvJ1 = 20;
             pvJ2 = 20;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
