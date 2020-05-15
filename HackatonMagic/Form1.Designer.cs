@@ -43,20 +43,19 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblInfoCarte = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSearchCard = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblInfoMarqueurs = new System.Windows.Forms.Label();
             this.nupJ1 = new System.Windows.Forms.NumericUpDown();
             this.lblLifeP1 = new System.Windows.Forms.Label();
             this.nupJ2 = new System.Windows.Forms.NumericUpDown();
             this.lblLifeP2 = new System.Windows.Forms.Label();
-            this.gbCounters = new System.Windows.Forms.GroupBox();
             this.btnAddCounter = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSearchCard = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNameP1
@@ -188,40 +187,6 @@
             this.lblInfoCarte.TabIndex = 22;
             this.lblInfoCarte.Text = "Information de la carte ";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.dice;
-            this.pictureBox1.Location = new System.Drawing.Point(253, 114);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnSearchCard
-            // 
-            this.btnSearchCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnSearchCard.Image = global::HackatonMagic.Properties.Resources.search;
-            this.btnSearchCard.Location = new System.Drawing.Point(715, 108);
-            this.btnSearchCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSearchCard.Name = "btnSearchCard";
-            this.btnSearchCard.Size = new System.Drawing.Size(43, 35);
-            this.btnSearchCard.TabIndex = 23;
-            this.btnSearchCard.UseVisualStyleBackColor = true;
-            this.btnSearchCard.Click += new System.EventHandler(this.btnSearchCard_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::HackatonMagic.Properties.Resources.spinedown20;
-            this.pictureBox2.Location = new System.Drawing.Point(255, 160);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
-            // 
             // lblInfoMarqueurs
             // 
             this.lblInfoMarqueurs.AutoSize = true;
@@ -287,14 +252,6 @@
             this.lblLifeP2.TabIndex = 30;
             this.lblLifeP2.Text = "Point de vie J2";
             // 
-            // gbCounters
-            // 
-            this.gbCounters.Location = new System.Drawing.Point(259, 324);
-            this.gbCounters.Name = "gbCounters";
-            this.gbCounters.Size = new System.Drawing.Size(453, 148);
-            this.gbCounters.TabIndex = 31;
-            this.gbCounters.TabStop = false;
-            // 
             // btnAddCounter
             // 
             this.btnAddCounter.Location = new System.Drawing.Point(255, 286);
@@ -305,6 +262,40 @@
             this.btnAddCounter.UseVisualStyleBackColor = true;
             this.btnAddCounter.Click += new System.EventHandler(this.btnAddCounter_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::HackatonMagic.Properties.Resources.spinedown20;
+            this.pictureBox2.Location = new System.Drawing.Point(255, 160);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.dice;
+            this.pictureBox1.Location = new System.Drawing.Point(253, 114);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnSearchCard
+            // 
+            this.btnSearchCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSearchCard.Image = global::HackatonMagic.Properties.Resources.search;
+            this.btnSearchCard.Location = new System.Drawing.Point(715, 108);
+            this.btnSearchCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchCard.Name = "btnSearchCard";
+            this.btnSearchCard.Size = new System.Drawing.Size(43, 35);
+            this.btnSearchCard.TabIndex = 23;
+            this.btnSearchCard.UseVisualStyleBackColor = true;
+            this.btnSearchCard.Click += new System.EventHandler(this.btnSearchCard_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -312,7 +303,6 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 582);
             this.Controls.Add(this.btnAddCounter);
-            this.Controls.Add(this.gbCounters);
             this.Controls.Add(this.lblLifeP2);
             this.Controls.Add(this.nupJ2);
             this.Controls.Add(this.lblLifeP1);
@@ -337,10 +327,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Hackaton Magic";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -369,7 +359,6 @@
         private System.Windows.Forms.Label lblLifeP1;
         private System.Windows.Forms.NumericUpDown nupJ2;
         private System.Windows.Forms.Label lblLifeP2;
-        private System.Windows.Forms.GroupBox gbCounters;
         private System.Windows.Forms.Button btnAddCounter;
     }
 }

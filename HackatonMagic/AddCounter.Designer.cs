@@ -33,9 +33,9 @@
             this.lblTypeMarqueur = new System.Windows.Forms.Label();
             this.lblNbreMarqueur = new System.Windows.Forms.Label();
             this.txtCardName = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNbreCounter = new System.Windows.Forms.TextBox();
             this.cbType = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblInfoValidate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnValidate
@@ -46,6 +46,7 @@
             this.btnValidate.TabIndex = 0;
             this.btnValidate.Text = "Valider";
             this.btnValidate.UseVisualStyleBackColor = true;
+            this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
             // 
             // lblNomCarte
             // 
@@ -83,38 +84,37 @@
             this.txtCardName.Text = "Nom de la carte";
             this.txtCardName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtNbreCounter
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 6;
+            this.txtNbreCounter.Location = new System.Drawing.Point(190, 91);
+            this.txtNbreCounter.Name = "txtNbreCounter";
+            this.txtNbreCounter.Size = new System.Drawing.Size(100, 22);
+            this.txtNbreCounter.TabIndex = 6;
             // 
             // cbType
             // 
             this.cbType.FormattingEnabled = true;
             this.cbType.Location = new System.Drawing.Point(190, 57);
             this.cbType.Name = "cbType";
-            this.cbType.Size = new System.Drawing.Size(121, 24);
+            this.cbType.Size = new System.Drawing.Size(227, 24);
             this.cbType.TabIndex = 7;
             // 
-            // label1
+            // lblInfoValidate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(190, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "label1";
+            this.lblInfoValidate.AutoSize = true;
+            this.lblInfoValidate.Location = new System.Drawing.Point(190, 134);
+            this.lblInfoValidate.Name = "lblInfoValidate";
+            this.lblInfoValidate.Size = new System.Drawing.Size(0, 17);
+            this.lblInfoValidate.TabIndex = 8;
             // 
             // AddCounter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 177);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblInfoValidate);
             this.Controls.Add(this.cbType);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtNbreCounter);
             this.Controls.Add(this.txtCardName);
             this.Controls.Add(this.lblNbreMarqueur);
             this.Controls.Add(this.lblTypeMarqueur);
@@ -134,8 +134,8 @@
         private System.Windows.Forms.Label lblTypeMarqueur;
         private System.Windows.Forms.Label lblNbreMarqueur;
         private System.Windows.Forms.TextBox txtCardName;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNbreCounter;
         private System.Windows.Forms.ComboBox cbType;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblInfoValidate;
     }
 }
