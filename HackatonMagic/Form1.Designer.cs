@@ -53,27 +53,32 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSearchCard = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.StormPlus = new System.Windows.Forms.Button();
+            this.StormMinus = new System.Windows.Forms.Button();
+            this.StormTxt = new System.Windows.Forms.TextBox();
+            this.RedTxt = new System.Windows.Forms.TextBox();
+            this.BlackMinus = new System.Windows.Forms.Button();
+            this.BlackTxt = new System.Windows.Forms.TextBox();
+            this.BlueMinus = new System.Windows.Forms.Button();
+            this.WhiteTxt = new System.Windows.Forms.TextBox();
+            this.WhiteMinus = new System.Windows.Forms.Button();
+            this.RedMinus = new System.Windows.Forms.Button();
+            this.GreenMinus = new System.Windows.Forms.Button();
+            this.ColorlessMinus = new System.Windows.Forms.Button();
+            this.BlueTxT = new System.Windows.Forms.TextBox();
+            this.GreenTxt = new System.Windows.Forms.TextBox();
+            this.ColorlessTxt = new System.Windows.Forms.TextBox();
+            this.lblInfoMarqueurs = new System.Windows.Forms.Label();
+            this.nupJ1 = new System.Windows.Forms.NumericUpDown();
+            this.lblLifeP1 = new System.Windows.Forms.Label();
+            this.nupJ2 = new System.Windows.Forms.NumericUpDown();
+            this.lblLifeP2 = new System.Windows.Forms.Label();
+            this.BluePlus = new System.Windows.Forms.Button();
+            this.WhitePlus = new System.Windows.Forms.Button();
+            this.BlackPlus = new System.Windows.Forms.Button();
+            this.RedPlus = new System.Windows.Forms.Button();
+            this.GreenPlus = new System.Windows.Forms.Button();
+            this.ColorlessPlus = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -81,13 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblInfoMarqueurs = new System.Windows.Forms.Label();
-            this.nupJ1 = new System.Windows.Forms.NumericUpDown();
-            this.lblLifeP1 = new System.Windows.Forms.Label();
-            this.nupJ2 = new System.Windows.Forms.NumericUpDown();
-            this.lblLifeP2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).BeginInit();
@@ -96,20 +94,20 @@
             // 
             // txtNameP1
             // 
-            this.txtNameP1.Location = new System.Drawing.Point(191, 52);
+            this.txtNameP1.Location = new System.Drawing.Point(190, 52);
             this.txtNameP1.Margin = new System.Windows.Forms.Padding(2);
             this.txtNameP1.Name = "txtNameP1";
-            this.txtNameP1.Size = new System.Drawing.Size(185, 22);
+            this.txtNameP1.Size = new System.Drawing.Size(140, 20);
             this.txtNameP1.TabIndex = 6;
             this.txtNameP1.Text = "Player 1";
             this.txtNameP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtNameP2
             // 
-            this.txtNameP2.Location = new System.Drawing.Point(393, 52);
+            this.txtNameP2.Location = new System.Drawing.Point(394, 52);
             this.txtNameP2.Margin = new System.Windows.Forms.Padding(2);
             this.txtNameP2.Name = "txtNameP2";
-            this.txtNameP2.Size = new System.Drawing.Size(185, 22);
+            this.txtNameP2.Size = new System.Drawing.Size(140, 20);
             this.txtNameP2.TabIndex = 7;
             this.txtNameP2.Text = "Player 2";
             this.txtNameP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -117,39 +115,39 @@
             // lblDice6Value
             // 
             this.lblDice6Value.AutoSize = true;
-            this.lblDice6Value.Location = new System.Drawing.Point(283, 98);
+            this.lblDice6Value.Location = new System.Drawing.Point(295, 102);
             this.lblDice6Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDice6Value.Name = "lblDice6Value";
-            this.lblDice6Value.Size = new System.Drawing.Size(13, 17);
+            this.lblDice6Value.Size = new System.Drawing.Size(10, 13);
             this.lblDice6Value.TabIndex = 11;
             this.lblDice6Value.Text = "-";
             // 
             // lblDice20Value
             // 
             this.lblDice20Value.AutoSize = true;
-            this.lblDice20Value.Location = new System.Drawing.Point(283, 139);
+            this.lblDice20Value.Location = new System.Drawing.Point(295, 139);
             this.lblDice20Value.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDice20Value.Name = "lblDice20Value";
-            this.lblDice20Value.Size = new System.Drawing.Size(13, 17);
+            this.lblDice20Value.Size = new System.Drawing.Size(10, 13);
             this.lblDice20Value.TabIndex = 12;
             this.lblDice20Value.Text = "-";
             // 
             // lblDiceXValue
             // 
             this.lblDiceXValue.AutoSize = true;
-            this.lblDiceXValue.Location = new System.Drawing.Point(283, 179);
+            this.lblDiceXValue.Location = new System.Drawing.Point(295, 171);
             this.lblDiceXValue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDiceXValue.Name = "lblDiceXValue";
-            this.lblDiceXValue.Size = new System.Drawing.Size(13, 17);
+            this.lblDiceXValue.Size = new System.Drawing.Size(10, 13);
             this.lblDiceXValue.TabIndex = 13;
             this.lblDiceXValue.Text = "-";
             // 
             // btnRoll6
             // 
-            this.btnRoll6.Location = new System.Drawing.Point(232, 95);
+            this.btnRoll6.Location = new System.Drawing.Point(237, 99);
             this.btnRoll6.Margin = new System.Windows.Forms.Padding(2);
             this.btnRoll6.Name = "btnRoll6";
-            this.btnRoll6.Size = new System.Drawing.Size(49, 23);
+            this.btnRoll6.Size = new System.Drawing.Size(37, 19);
             this.btnRoll6.TabIndex = 14;
             this.btnRoll6.Text = "Roll";
             this.btnRoll6.UseVisualStyleBackColor = true;
@@ -157,10 +155,10 @@
             // 
             // btnRoll20
             // 
-            this.btnRoll20.Location = new System.Drawing.Point(232, 136);
+            this.btnRoll20.Location = new System.Drawing.Point(237, 136);
             this.btnRoll20.Margin = new System.Windows.Forms.Padding(2);
             this.btnRoll20.Name = "btnRoll20";
-            this.btnRoll20.Size = new System.Drawing.Size(49, 23);
+            this.btnRoll20.Size = new System.Drawing.Size(37, 19);
             this.btnRoll20.TabIndex = 15;
             this.btnRoll20.Text = "Roll";
             this.btnRoll20.UseVisualStyleBackColor = true;
@@ -168,10 +166,10 @@
             // 
             // BtnRollX
             // 
-            this.BtnRollX.Location = new System.Drawing.Point(232, 176);
+            this.BtnRollX.Location = new System.Drawing.Point(237, 169);
             this.BtnRollX.Margin = new System.Windows.Forms.Padding(2);
             this.BtnRollX.Name = "BtnRollX";
-            this.BtnRollX.Size = new System.Drawing.Size(49, 23);
+            this.BtnRollX.Size = new System.Drawing.Size(37, 19);
             this.BtnRollX.TabIndex = 16;
             this.BtnRollX.Text = "Roll";
             this.BtnRollX.UseVisualStyleBackColor = true;
@@ -179,10 +177,10 @@
             // 
             // txtDiceX
             // 
-            this.txtDiceX.Location = new System.Drawing.Point(190, 175);
+            this.txtDiceX.Location = new System.Drawing.Point(190, 168);
             this.txtDiceX.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiceX.Name = "txtDiceX";
-            this.txtDiceX.Size = new System.Drawing.Size(44, 22);
+            this.txtDiceX.Size = new System.Drawing.Size(34, 20);
             this.txtDiceX.TabIndex = 17;
             // 
             // gameTime
@@ -191,10 +189,10 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(18, 18);
+            this.btnStart.Location = new System.Drawing.Point(14, 15);
             this.btnStart.Margin = new System.Windows.Forms.Padding(2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(61, 23);
+            this.btnStart.Size = new System.Drawing.Size(46, 19);
             this.btnStart.TabIndex = 19;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -203,33 +201,36 @@
             // lblTime
             // 
             this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(103, 25);
+            this.lblTime.Location = new System.Drawing.Point(77, 20);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(13, 17);
+            this.lblTime.Size = new System.Drawing.Size(10, 13);
             this.lblTime.TabIndex = 20;
             this.lblTime.Text = "-";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(394, 93);
+            this.textBox1.Location = new System.Drawing.Point(393, 93);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
+            this.textBox1.Size = new System.Drawing.Size(139, 20);
             this.textBox1.TabIndex = 21;
             // 
             // lblInfoCarte
             // 
             this.lblInfoCarte.AutoSize = true;
-            this.lblInfoCarte.Location = new System.Drawing.Point(524, 158);
+            this.lblInfoCarte.Location = new System.Drawing.Point(393, 128);
+            this.lblInfoCarte.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInfoCarte.Name = "lblInfoCarte";
-            this.lblInfoCarte.Size = new System.Drawing.Size(153, 17);
+            this.lblInfoCarte.Size = new System.Drawing.Size(115, 13);
             this.lblInfoCarte.TabIndex = 22;
             this.lblInfoCarte.Text = "Information de la carte ";
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::HackatonMagic.Properties.Resources.colorless;
-            this.pictureBox9.Location = new System.Drawing.Point(18, 238);
+            this.pictureBox9.Location = new System.Drawing.Point(14, 218);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(25, 25);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -239,7 +240,8 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::HackatonMagic.Properties.Resources.green;
-            this.pictureBox8.Location = new System.Drawing.Point(18, 207);
+            this.pictureBox8.Location = new System.Drawing.Point(14, 189);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(25, 25);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -249,7 +251,8 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::HackatonMagic.Properties.Resources.red;
-            this.pictureBox7.Location = new System.Drawing.Point(18, 176);
+            this.pictureBox7.Location = new System.Drawing.Point(14, 160);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(25, 25);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -259,7 +262,8 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::HackatonMagic.Properties.Resources.black;
-            this.pictureBox6.Location = new System.Drawing.Point(18, 145);
+            this.pictureBox6.Location = new System.Drawing.Point(14, 131);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(25, 25);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -269,7 +273,8 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::HackatonMagic.Properties.Resources.blue;
-            this.pictureBox5.Location = new System.Drawing.Point(18, 114);
+            this.pictureBox5.Location = new System.Drawing.Point(14, 102);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(25, 25);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -279,7 +284,8 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::HackatonMagic.Properties.Resources.white;
-            this.pictureBox4.Location = new System.Drawing.Point(18, 83);
+            this.pictureBox4.Location = new System.Drawing.Point(14, 73);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(25, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -289,7 +295,8 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::HackatonMagic.Properties.Resources.storm;
-            this.pictureBox3.Location = new System.Drawing.Point(18, 53);
+            this.pictureBox3.Location = new System.Drawing.Point(14, 49);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(25, 19);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -309,8 +316,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.dice;
-            this.pictureBox1.Location = new System.Drawing.Point(253, 114);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(190, 93);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -321,227 +327,194 @@
             // 
             this.btnSearchCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnSearchCard.Image = global::HackatonMagic.Properties.Resources.search;
-            this.btnSearchCard.Location = new System.Drawing.Point(715, 108);
-            this.btnSearchCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearchCard.Location = new System.Drawing.Point(536, 88);
+            this.btnSearchCard.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchCard.Name = "btnSearchCard";
-            this.btnSearchCard.Size = new System.Drawing.Size(43, 35);
+            this.btnSearchCard.Size = new System.Drawing.Size(32, 28);
             this.btnSearchCard.TabIndex = 23;
             this.btnSearchCard.UseVisualStyleBackColor = true;
             this.btnSearchCard.Click += new System.EventHandler(this.btnSearchCard_Click);
             // 
-            // button1
+            // StormPlus
             // 
-            this.button1.Location = new System.Drawing.Point(140, 52);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 25);
-            this.button1.TabIndex = 35;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.StormPlus.Location = new System.Drawing.Point(124, 43);
+            this.StormPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.StormPlus.Name = "StormPlus";
+            this.StormPlus.Size = new System.Drawing.Size(25, 25);
+            this.StormPlus.TabIndex = 35;
+            this.StormPlus.Text = "+";
+            this.StormPlus.UseVisualStyleBackColor = true;
+            this.StormPlus.Click += new System.EventHandler(this.StormPlus_Click_1);
             // 
-            // button2
+            // StormMinus
             // 
-            this.button2.Location = new System.Drawing.Point(57, 52);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(25, 25);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.StormMinus.Location = new System.Drawing.Point(53, 43);
+            this.StormMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.StormMinus.Name = "StormMinus";
+            this.StormMinus.Size = new System.Drawing.Size(25, 25);
+            this.StormMinus.TabIndex = 34;
+            this.StormMinus.Text = "-";
+            this.StormMinus.UseVisualStyleBackColor = true;
+            this.StormMinus.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox2
+            // StormTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(86, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(50, 20);
-            this.textBox2.TabIndex = 36;
-            this.textBox2.Text = "\r\n";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.StormTxt.Location = new System.Drawing.Point(82, 48);
+            this.StormTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.StormTxt.Name = "StormTxt";
+            this.StormTxt.Size = new System.Drawing.Size(38, 20);
+            this.StormTxt.TabIndex = 36;
+            this.StormTxt.Text = "\r\n0";
+            this.StormTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // RedTxt
             // 
-            this.textBox3.Location = new System.Drawing.Point(86, 179);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(50, 20);
-            this.textBox3.TabIndex = 39;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RedTxt.Location = new System.Drawing.Point(82, 165);
+            this.RedTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.RedTxt.Name = "RedTxt";
+            this.RedTxt.Size = new System.Drawing.Size(38, 20);
+            this.RedTxt.TabIndex = 39;
+            this.RedTxt.Text = "0";
+            this.RedTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button3
+            // BlackMinus
             // 
-            this.button3.Location = new System.Drawing.Point(140, 145);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(25, 25);
-            this.button3.TabIndex = 38;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BlackMinus.Location = new System.Drawing.Point(53, 131);
+            this.BlackMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.BlackMinus.Name = "BlackMinus";
+            this.BlackMinus.Size = new System.Drawing.Size(25, 25);
+            this.BlackMinus.TabIndex = 37;
+            this.BlackMinus.Text = "-";
+            this.BlackMinus.UseVisualStyleBackColor = true;
+            this.BlackMinus.Click += new System.EventHandler(this.BlackMinus_Click_1);
             // 
-            // button4
+            // BlackTxt
             // 
-            this.button4.Location = new System.Drawing.Point(57, 145);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(25, 25);
-            this.button4.TabIndex = 37;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BlackTxt.Location = new System.Drawing.Point(82, 135);
+            this.BlackTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.BlackTxt.Name = "BlackTxt";
+            this.BlackTxt.Size = new System.Drawing.Size(38, 20);
+            this.BlackTxt.TabIndex = 42;
+            this.BlackTxt.Text = "0";
+            this.BlackTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // BlueMinus
             // 
-            this.textBox4.Location = new System.Drawing.Point(86, 148);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(50, 20);
-            this.textBox4.TabIndex = 42;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.BlueMinus.Location = new System.Drawing.Point(53, 102);
+            this.BlueMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.BlueMinus.Name = "BlueMinus";
+            this.BlueMinus.Size = new System.Drawing.Size(25, 25);
+            this.BlueMinus.TabIndex = 40;
+            this.BlueMinus.Text = "-";
+            this.BlueMinus.UseVisualStyleBackColor = true;
+            this.BlueMinus.Click += new System.EventHandler(this.BlueMinus_Click_1);
             // 
-            // button5
+            // WhiteTxt
             // 
-            this.button5.Location = new System.Drawing.Point(140, 114);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(25, 25);
-            this.button5.TabIndex = 41;
-            this.button5.Text = "+";
-            this.button5.UseVisualStyleBackColor = true;
+            this.WhiteTxt.Location = new System.Drawing.Point(82, 78);
+            this.WhiteTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.WhiteTxt.Name = "WhiteTxt";
+            this.WhiteTxt.Size = new System.Drawing.Size(38, 20);
+            this.WhiteTxt.TabIndex = 45;
+            this.WhiteTxt.Text = "0";
+            this.WhiteTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button6
+            // WhiteMinus
             // 
-            this.button6.Location = new System.Drawing.Point(57, 114);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(25, 25);
-            this.button6.TabIndex = 40;
-            this.button6.Text = "-";
-            this.button6.UseVisualStyleBackColor = true;
+            this.WhiteMinus.Location = new System.Drawing.Point(53, 73);
+            this.WhiteMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.WhiteMinus.Name = "WhiteMinus";
+            this.WhiteMinus.Size = new System.Drawing.Size(25, 25);
+            this.WhiteMinus.TabIndex = 43;
+            this.WhiteMinus.Text = "-";
+            this.WhiteMinus.UseVisualStyleBackColor = true;
+            this.WhiteMinus.Click += new System.EventHandler(this.WhiteMinus_Click_1);
             // 
-            // textBox5
+            // RedMinus
             // 
-            this.textBox5.Location = new System.Drawing.Point(86, 86);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(50, 20);
-            this.textBox5.TabIndex = 45;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.RedMinus.Location = new System.Drawing.Point(53, 160);
+            this.RedMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.RedMinus.Name = "RedMinus";
+            this.RedMinus.Size = new System.Drawing.Size(25, 25);
+            this.RedMinus.TabIndex = 46;
+            this.RedMinus.Text = "-";
+            this.RedMinus.UseVisualStyleBackColor = true;
+            this.RedMinus.Click += new System.EventHandler(this.RedMinus_Click_1);
             // 
-            // button7
+            // GreenMinus
             // 
-            this.button7.Location = new System.Drawing.Point(140, 83);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(25, 25);
-            this.button7.TabIndex = 44;
-            this.button7.Text = "+";
-            this.button7.UseVisualStyleBackColor = true;
+            this.GreenMinus.Location = new System.Drawing.Point(53, 189);
+            this.GreenMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.GreenMinus.Name = "GreenMinus";
+            this.GreenMinus.Size = new System.Drawing.Size(25, 25);
+            this.GreenMinus.TabIndex = 47;
+            this.GreenMinus.Text = "-";
+            this.GreenMinus.UseVisualStyleBackColor = true;
+            this.GreenMinus.Click += new System.EventHandler(this.GreenMinus_Click_1);
             // 
-            // button8
+            // ColorlessMinus
             // 
-            this.button8.Location = new System.Drawing.Point(57, 83);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(25, 25);
-            this.button8.TabIndex = 43;
-            this.button8.Text = "-";
-            this.button8.UseVisualStyleBackColor = true;
+            this.ColorlessMinus.Location = new System.Drawing.Point(53, 218);
+            this.ColorlessMinus.Margin = new System.Windows.Forms.Padding(2);
+            this.ColorlessMinus.Name = "ColorlessMinus";
+            this.ColorlessMinus.Size = new System.Drawing.Size(25, 25);
+            this.ColorlessMinus.TabIndex = 48;
+            this.ColorlessMinus.Text = "-";
+            this.ColorlessMinus.UseVisualStyleBackColor = true;
+            this.ColorlessMinus.Click += new System.EventHandler(this.ColorlessMinus_Click_1);
             // 
-            // button9
+            // BlueTxT
             // 
-            this.button9.Location = new System.Drawing.Point(57, 176);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(25, 25);
-            this.button9.TabIndex = 46;
-            this.button9.Text = "-";
-            this.button9.UseVisualStyleBackColor = true;
+            this.BlueTxT.Location = new System.Drawing.Point(82, 107);
+            this.BlueTxT.Margin = new System.Windows.Forms.Padding(2);
+            this.BlueTxT.Name = "BlueTxT";
+            this.BlueTxT.Size = new System.Drawing.Size(38, 20);
+            this.BlueTxT.TabIndex = 49;
+            this.BlueTxT.Text = "0";
+            this.BlueTxT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button10
+            // GreenTxt
             // 
-            this.button10.Location = new System.Drawing.Point(57, 207);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(25, 25);
-            this.button10.TabIndex = 47;
-            this.button10.Text = "-";
-            this.button10.UseVisualStyleBackColor = true;
+            this.GreenTxt.Location = new System.Drawing.Point(82, 194);
+            this.GreenTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.GreenTxt.Name = "GreenTxt";
+            this.GreenTxt.Size = new System.Drawing.Size(38, 20);
+            this.GreenTxt.TabIndex = 50;
+            this.GreenTxt.Text = "0";
+            this.GreenTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button11
+            // ColorlessTxt
             // 
-            this.button11.Location = new System.Drawing.Point(57, 238);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(25, 25);
-            this.button11.TabIndex = 48;
-            this.button11.Text = "-";
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(86, 117);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(50, 20);
-            this.textBox6.TabIndex = 49;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(86, 210);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(50, 20);
-            this.textBox7.TabIndex = 50;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(86, 241);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(50, 20);
-            this.textBox8.TabIndex = 51;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(140, 176);
-            this.button12.Margin = new System.Windows.Forms.Padding(2);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(25, 25);
-            this.button12.TabIndex = 52;
-            this.button12.Text = "+";
-            this.button12.UseVisualStyleBackColor = true;
-            this.pictureBox2.Image = global::HackatonMagic.Properties.Resources.spinedown20;
-            this.pictureBox2.Location = new System.Drawing.Point(255, 160);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 25);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            this.ColorlessTxt.Location = new System.Drawing.Point(82, 223);
+            this.ColorlessTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.ColorlessTxt.Name = "ColorlessTxt";
+            this.ColorlessTxt.Size = new System.Drawing.Size(38, 20);
+            this.ColorlessTxt.TabIndex = 51;
+            this.ColorlessTxt.Text = "0";
+            this.ColorlessTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblInfoMarqueurs
             // 
             this.lblInfoMarqueurs.AutoSize = true;
-            this.lblInfoMarqueurs.Location = new System.Drawing.Point(255, 266);
+            this.lblInfoMarqueurs.Location = new System.Drawing.Point(191, 216);
+            this.lblInfoMarqueurs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblInfoMarqueurs.Name = "lblInfoMarqueurs";
-            this.lblInfoMarqueurs.Size = new System.Drawing.Size(76, 17);
+            this.lblInfoMarqueurs.Size = new System.Drawing.Size(57, 13);
             this.lblInfoMarqueurs.TabIndex = 26;
             this.lblInfoMarqueurs.Text = "Marqueurs";
             // 
             // nupJ1
             // 
             this.nupJ1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupJ1.Location = new System.Drawing.Point(357, 12);
+            this.nupJ1.Location = new System.Drawing.Point(268, 10);
+            this.nupJ1.Margin = new System.Windows.Forms.Padding(2);
             this.nupJ1.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.nupJ1.Name = "nupJ1";
-            this.nupJ1.Size = new System.Drawing.Size(83, 36);
+            this.nupJ1.Size = new System.Drawing.Size(62, 30);
             this.nupJ1.TabIndex = 27;
             this.nupJ1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nupJ1.Value = new decimal(new int[] {
@@ -553,23 +526,25 @@
             // lblLifeP1
             // 
             this.lblLifeP1.AutoSize = true;
-            this.lblLifeP1.Location = new System.Drawing.Point(250, 25);
+            this.lblLifeP1.Location = new System.Drawing.Point(188, 20);
+            this.lblLifeP1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLifeP1.Name = "lblLifeP1";
-            this.lblLifeP1.Size = new System.Drawing.Size(101, 17);
+            this.lblLifeP1.Size = new System.Drawing.Size(77, 13);
             this.lblLifeP1.TabIndex = 28;
             this.lblLifeP1.Text = "Point de vie J1";
             // 
             // nupJ2
             // 
             this.nupJ2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupJ2.Location = new System.Drawing.Point(629, 12);
+            this.nupJ2.Location = new System.Drawing.Point(472, 10);
+            this.nupJ2.Margin = new System.Windows.Forms.Padding(2);
             this.nupJ2.Maximum = new decimal(new int[] {
             9999999,
             0,
             0,
             0});
             this.nupJ2.Name = "nupJ2";
-            this.nupJ2.Size = new System.Drawing.Size(83, 36);
+            this.nupJ2.Size = new System.Drawing.Size(62, 30);
             this.nupJ2.TabIndex = 29;
             this.nupJ2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nupJ2.Value = new decimal(new int[] {
@@ -581,58 +556,106 @@
             // lblLifeP2
             // 
             this.lblLifeP2.AutoSize = true;
-            this.lblLifeP2.Location = new System.Drawing.Point(522, 25);
+            this.lblLifeP2.Location = new System.Drawing.Point(392, 20);
+            this.lblLifeP2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLifeP2.Name = "lblLifeP2";
-            this.lblLifeP2.Size = new System.Drawing.Size(101, 17);
+            this.lblLifeP2.Size = new System.Drawing.Size(77, 13);
             this.lblLifeP2.TabIndex = 30;
             this.lblLifeP2.Text = "Point de vie J2";
             // 
-            // button13
+            // BluePlus
             // 
-            this.button13.Location = new System.Drawing.Point(140, 207);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(25, 25);
-            this.button13.TabIndex = 53;
-            this.button13.Text = "+";
-            this.button13.UseVisualStyleBackColor = true;
+            this.BluePlus.Location = new System.Drawing.Point(124, 102);
+            this.BluePlus.Margin = new System.Windows.Forms.Padding(2);
+            this.BluePlus.Name = "BluePlus";
+            this.BluePlus.Size = new System.Drawing.Size(25, 25);
+            this.BluePlus.TabIndex = 52;
+            this.BluePlus.Text = "+";
+            this.BluePlus.UseVisualStyleBackColor = true;
+            this.BluePlus.Click += new System.EventHandler(this.BluePlus_Click_1);
             // 
-            // button14
+            // WhitePlus
             // 
-            this.button14.Location = new System.Drawing.Point(140, 238);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(25, 25);
-            this.button14.TabIndex = 54;
-            this.button14.Text = "+";
-            this.button14.UseVisualStyleBackColor = true;
+            this.WhitePlus.Location = new System.Drawing.Point(124, 73);
+            this.WhitePlus.Margin = new System.Windows.Forms.Padding(2);
+            this.WhitePlus.Name = "WhitePlus";
+            this.WhitePlus.Size = new System.Drawing.Size(25, 25);
+            this.WhitePlus.TabIndex = 53;
+            this.WhitePlus.Text = "+";
+            this.WhitePlus.UseVisualStyleBackColor = true;
+            this.WhitePlus.Click += new System.EventHandler(this.WhitePlus_Click_1);
+            // 
+            // BlackPlus
+            // 
+            this.BlackPlus.Location = new System.Drawing.Point(124, 131);
+            this.BlackPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.BlackPlus.Name = "BlackPlus";
+            this.BlackPlus.Size = new System.Drawing.Size(25, 25);
+            this.BlackPlus.TabIndex = 54;
+            this.BlackPlus.Text = "+";
+            this.BlackPlus.UseVisualStyleBackColor = true;
+            this.BlackPlus.Click += new System.EventHandler(this.BlackPlus_Click_1);
+            // 
+            // RedPlus
+            // 
+            this.RedPlus.Location = new System.Drawing.Point(124, 160);
+            this.RedPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.RedPlus.Name = "RedPlus";
+            this.RedPlus.Size = new System.Drawing.Size(25, 25);
+            this.RedPlus.TabIndex = 55;
+            this.RedPlus.Text = "+";
+            this.RedPlus.UseVisualStyleBackColor = true;
+            this.RedPlus.Click += new System.EventHandler(this.RedPlus_Click_1);
+            // 
+            // GreenPlus
+            // 
+            this.GreenPlus.Location = new System.Drawing.Point(124, 189);
+            this.GreenPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.GreenPlus.Name = "GreenPlus";
+            this.GreenPlus.Size = new System.Drawing.Size(25, 25);
+            this.GreenPlus.TabIndex = 56;
+            this.GreenPlus.Text = "+";
+            this.GreenPlus.UseVisualStyleBackColor = true;
+            this.GreenPlus.Click += new System.EventHandler(this.GreenPlus_Click_1);
+            // 
+            // ColorlessPlus
+            // 
+            this.ColorlessPlus.Location = new System.Drawing.Point(124, 218);
+            this.ColorlessPlus.Margin = new System.Windows.Forms.Padding(2);
+            this.ColorlessPlus.Name = "ColorlessPlus";
+            this.ColorlessPlus.Size = new System.Drawing.Size(25, 25);
+            this.ColorlessPlus.TabIndex = 57;
+            this.ColorlessPlus.Text = "+";
+            this.ColorlessPlus.UseVisualStyleBackColor = true;
+            this.ColorlessPlus.Click += new System.EventHandler(this.ColorlessPlus_Click_1);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(600, 473);
+            this.Controls.Add(this.ColorlessPlus);
+            this.Controls.Add(this.GreenPlus);
+            this.Controls.Add(this.RedPlus);
+            this.Controls.Add(this.BlackPlus);
+            this.Controls.Add(this.WhitePlus);
+            this.Controls.Add(this.BluePlus);
+            this.Controls.Add(this.ColorlessTxt);
+            this.Controls.Add(this.GreenTxt);
+            this.Controls.Add(this.BlueTxT);
+            this.Controls.Add(this.ColorlessMinus);
+            this.Controls.Add(this.GreenMinus);
+            this.Controls.Add(this.RedMinus);
+            this.Controls.Add(this.WhiteTxt);
+            this.Controls.Add(this.WhiteMinus);
+            this.Controls.Add(this.BlackTxt);
+            this.Controls.Add(this.BlueMinus);
+            this.Controls.Add(this.RedTxt);
+            this.Controls.Add(this.BlackMinus);
+            this.Controls.Add(this.StormTxt);
+            this.Controls.Add(this.StormPlus);
+            this.Controls.Add(this.StormMinus);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -640,8 +663,6 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(800, 582);
             this.Controls.Add(this.lblLifeP2);
             this.Controls.Add(this.nupJ2);
             this.Controls.Add(this.lblLifeP1);
@@ -663,12 +684,6 @@
             this.Controls.Add(this.lblDice6Value);
             this.Controls.Add(this.txtNameP2);
             this.Controls.Add(this.txtNameP1);
-            this.Controls.Add(this.btnMinusJ2);
-            this.Controls.Add(this.btnPlusJ2);
-            this.Controls.Add(this.btnPlusJ1);
-            this.Controls.Add(this.btnMinusJ1);
-            this.Controls.Add(this.lblPVJ2);
-            this.Controls.Add(this.lblPVJ1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Hackaton Magic";
@@ -682,7 +697,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupJ2)).EndInit();
             this.ResumeLayout(false);
@@ -715,32 +729,32 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button StormPlus;
+        private System.Windows.Forms.Button StormMinus;
+        private System.Windows.Forms.TextBox StormTxt;
+        private System.Windows.Forms.TextBox RedTxt;
+        private System.Windows.Forms.Button BlackMinus;
+        private System.Windows.Forms.TextBox BlackTxt;
+        private System.Windows.Forms.Button BlueMinus;
+        private System.Windows.Forms.TextBox WhiteTxt;
+        private System.Windows.Forms.Button WhiteMinus;
+        private System.Windows.Forms.Button RedMinus;
+        private System.Windows.Forms.Button GreenMinus;
+        private System.Windows.Forms.Button ColorlessMinus;
+        private System.Windows.Forms.TextBox BlueTxT;
+        private System.Windows.Forms.TextBox GreenTxt;
+        private System.Windows.Forms.TextBox ColorlessTxt;
         private System.Windows.Forms.Label lblInfoMarqueurs;
         private System.Windows.Forms.NumericUpDown nupJ1;
         private System.Windows.Forms.Label lblLifeP1;
         private System.Windows.Forms.NumericUpDown nupJ2;
         private System.Windows.Forms.Label lblLifeP2;
+        private System.Windows.Forms.Button BluePlus;
+        private System.Windows.Forms.Button WhitePlus;
+        private System.Windows.Forms.Button BlackPlus;
+        private System.Windows.Forms.Button RedPlus;
+        private System.Windows.Forms.Button GreenPlus;
+        private System.Windows.Forms.Button ColorlessPlus;
     }
 }
 

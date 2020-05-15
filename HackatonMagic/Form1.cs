@@ -115,9 +115,137 @@ namespace HackatonMagic
 
         }
 
+        // Méthode pour diminuer de un le compteur Storm
         private void button2_Click(object sender, EventArgs e)
         {
+            var Stormvalue = Int32.Parse(StormTxt.Text);
+            if (Stormvalue > 0)
+            {
+                Stormvalue--;
+            }
+            StormTxt.Text = Stormvalue.ToString();
+        }
 
+        // Méthode pour augmenter de un le compteur Storm
+        private void StormPlus_Click_1(object sender, EventArgs e)
+        {
+            var Stormvalue =  Int32.Parse(StormTxt.Text);
+            Stormvalue++;
+            StormTxt.Text = Stormvalue.ToString(); 
+        }
+
+        // Méthode pour diminuer de un le compteur Blue
+        private void BlueMinus_Click_1(object sender, EventArgs e)
+        {
+            var BlueValue = Int32.Parse(BlueTxT.Text);
+            if (BlueValue > 0)
+            {
+                BlueValue--;
+            }
+            BlueTxT.Text = BlueValue.ToString();
+        }
+
+        // Méthode pour augmenter de un le compteur Blue
+        private void BluePlus_Click_1(object sender, EventArgs e)
+        {
+            var Bluevalue = Int32.Parse(BlueTxT.Text);
+            Bluevalue++;
+            BlueTxT.Text = Bluevalue.ToString();
+        }
+
+        // Méthode pour diminuer de un le compteur White
+        private void WhiteMinus_Click_1(object sender, EventArgs e)
+        {
+            var WhiteValue = Int32.Parse(WhiteTxt.Text);
+            if (WhiteValue > 0)
+            {
+                WhiteValue--;
+            }
+            WhiteTxt.Text = WhiteValue.ToString();
+        }
+
+        // Méthode pour augmenter de un le compteur White
+        private void WhitePlus_Click_1(object sender, EventArgs e)
+        {
+            var WhiteValue = Int32.Parse(WhiteTxt.Text);
+            WhiteValue++;
+            WhiteTxt.Text = WhiteValue.ToString();
+        }
+
+        // Méthode pour diminuer de un le compteur Black
+        private void BlackMinus_Click_1(object sender, EventArgs e)
+        {
+            var BlackValue = Int32.Parse(BlackTxt.Text);
+            if (BlackValue > 0)
+            {
+                BlackValue--;
+            }
+            BlackTxt.Text = BlackValue.ToString();
+        }
+
+        // Méthode pour augmenter de un le compteur Black
+        private void BlackPlus_Click_1(object sender, EventArgs e)
+        {
+            var BlackValue = Int32.Parse(BlackTxt.Text);
+            BlackValue++;
+            BlackTxt.Text = BlackValue.ToString();
+        }
+
+        // Méthode pour diminuer de un le compteur Red
+        private void RedMinus_Click_1(object sender, EventArgs e)
+        {
+            var RedValue = Int32.Parse(RedTxt.Text);
+            if (RedValue > 0)
+            {
+                RedValue--;
+            }
+            RedTxt.Text = RedValue.ToString();
+        }
+
+        // Méthode pour augmenter de un le compteur Red
+        private void RedPlus_Click_1(object sender, EventArgs e)
+        {
+            var RedValue = Int32.Parse(RedTxt.Text);
+            RedValue++;
+            RedTxt.Text = RedValue.ToString();
+        }
+
+        // Méthode pour diminuer de un le compteur Green
+        private void GreenMinus_Click_1(object sender, EventArgs e)
+        {
+            var GreenValue = Int32.Parse(GreenTxt.Text);
+            if (GreenValue > 0)
+            {
+                GreenValue--;
+            }
+            GreenTxt.Text = GreenValue.ToString();
+        }
+
+        // Méthode pour augmenter de un le compteur Green
+        private void GreenPlus_Click_1(object sender, EventArgs e)
+        {
+            var GreenValue = Int32.Parse(GreenTxt.Text);
+            GreenValue++;
+            GreenTxt.Text = GreenValue.ToString();
+        }
+
+        // Méthode pour diminuer de un le compteur Colorless
+        private void ColorlessMinus_Click_1(object sender, EventArgs e)
+        {
+            var ColorlessValue = Int32.Parse(ColorlessTxt.Text);
+            if (ColorlessValue > 0)
+            {
+                ColorlessValue--;
+            }
+            ColorlessTxt.Text = ColorlessValue.ToString();
+        }
+
+        // Méthode pour augmenter de un le compteur Colorless
+        private void ColorlessPlus_Click_1(object sender, EventArgs e)
+        {
+            var ColorlessValue = Int32.Parse(ColorlessTxt.Text);
+            ColorlessValue++;
+            ColorlessTxt.Text = ColorlessValue.ToString();
         }
     }
 }
