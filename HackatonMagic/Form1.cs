@@ -12,6 +12,9 @@ namespace HackatonMagic
 {
     public partial class Form1 : Form
     {
+        string cardName;
+        string counterType;
+        int nbreCounter;
         int minute = 0;
         int hour = 0;
         int second = 0;
@@ -247,5 +250,20 @@ namespace HackatonMagic
             ColorlessValue++;
             ColorlessTxt.Text = ColorlessValue.ToString();
         }
+        // Méthode pour ajouter un marqueur d'un type donnée dans une liste déroulante, à une carte choisie par le joueur
+        // avec un nombre de marqueur donnée par le joueur
+        private void btnAddCounter_Click(object sender, EventArgs e)
+        {
+            using(var addCounter = new AddCounter())
+            {
+                var result = addCounter.ShowDialog();
+                if(result == DialogResult.OK)
+                {
+                    cardName = addCounter._cardName;
+                    counterType = addCounter._counterType;
+                    nbreCounter = addCounter._nbreCounter;
+                }
+            }
+          }
     }
 }
