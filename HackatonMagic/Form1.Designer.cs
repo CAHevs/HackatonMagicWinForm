@@ -303,7 +303,7 @@
             // 
             this.pictureBox2.Image = global::HackatonMagic.Properties.Resources.spinedown20;
             this.pictureBox2.Location = new System.Drawing.Point(273, 165);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -314,7 +314,7 @@
             // 
             this.pictureBox1.Image = global::HackatonMagic.Properties.Resources.dice;
             this.pictureBox1.Location = new System.Drawing.Point(272, 122);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -519,6 +519,7 @@
             0,
             0,
             0});
+            this.nupJ1.ValueChanged += new System.EventHandler(this.nupJ1_ValueChanged);
             // 
             // lblLifeP1
             // 
@@ -561,7 +562,7 @@
             // btnAddCounter
             // 
             this.btnAddCounter.Location = new System.Drawing.Point(254, 296);
-            this.btnAddCounter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddCounter.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddCounter.Name = "btnAddCounter";
             this.btnAddCounter.Size = new System.Drawing.Size(164, 28);
             this.btnAddCounter.TabIndex = 58;
@@ -639,7 +640,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1067, 716);
+            this.ClientSize = new System.Drawing.Size(809, 716);
             this.Controls.Add(this.ColorlessPlus);
             this.Controls.Add(this.GreenPlus);
             this.Controls.Add(this.RedPlus);
