@@ -41,7 +41,7 @@
             this.gameTime = new System.Windows.Forms.Timer(this.components);
             this.btnStart = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearchCard = new System.Windows.Forms.TextBox();
             this.lblInfoCarte = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -212,13 +212,13 @@
             this.lblTime.TabIndex = 20;
             this.lblTime.Text = "-";
             // 
-            // textBox1
+            // txtSearchCard
             // 
-            this.textBox1.Location = new System.Drawing.Point(524, 114);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 22);
-            this.textBox1.TabIndex = 21;
+            this.txtSearchCard.Location = new System.Drawing.Point(524, 114);
+            this.txtSearchCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSearchCard.Name = "txtSearchCard";
+            this.txtSearchCard.Size = new System.Drawing.Size(184, 22);
+            this.txtSearchCard.TabIndex = 21;
             // 
             // lblInfoCarte
             // 
@@ -745,7 +745,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSearchCard);
             this.Controls.Add(this.lblInfoCarte);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSearchCard);
             this.Controls.Add(this.lblTime);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtDiceX);
@@ -760,7 +760,6 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Hackaton Magic";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -791,7 +790,7 @@
         private System.Windows.Forms.Timer gameTime;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblTime;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearchCard;
         private System.Windows.Forms.Label lblInfoCarte;
         private System.Windows.Forms.Button btnSearchCard;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -829,7 +828,6 @@
         private System.Windows.Forms.Button RedPlus;
         private System.Windows.Forms.Button GreenPlus;
         private System.Windows.Forms.Button ColorlessPlus;
-        private System.Windows.Forms.GroupBox gbCounters;
         private System.Windows.Forms.Button btnAddCounter;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

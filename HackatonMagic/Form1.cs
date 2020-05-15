@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BLL;
+using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace HackatonMagic
 {
     public partial class Form1 : Form
     {
+        private IConfiguration Configuration { get; }
+
         string cardName;
         string counterType;
         int nbreCounter;
@@ -25,6 +30,7 @@ namespace HackatonMagic
             nupJ1.ValueChanged += new EventHandler(lifeChanged);
             nupJ2.ValueChanged += new EventHandler(lifeChanged);
             dataGridView1.CellClick += new DataGridViewCellEventHandler(dataGridView1_CellClick);
+            
         }
         
         // Méthode permettant de simuler un lancer de dé
@@ -111,11 +117,10 @@ namespace HackatonMagic
         // Méthode pour aller chercher une carte dans la bd et afficher les info dans lblInfoCard
         private void btnSearchCard_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
+            string searchedCard = txtSearchCard.Text;
+            ICardManager cardManager = new CardManager(Configuration);
+            Card selectedCard = cardManager.GetCardByName(searchedCard);
+            lblInfoCarte.Text = selectedCard.name;
 
         }
 
@@ -273,26 +278,19 @@ namespace HackatonMagic
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var currentRow = dataGridView1.CurrentRow;
-            int currentCounter = int.Parse(currentRow.Cells[3].Value.ToString());
+            if(e.ColumnIndex != 2 || e.ColumnIndex != 4) { }
             if (e.ColumnIndex == 2)
-            { 
+            {
+                int currentCounter = int.Parse(currentRow.Cells[3].Value.ToString());
                 currentCounter--;
+                currentRow.Cells[3].Value = currentCounter;
             }
             else if(e.ColumnIndex == 4)
             {
+                int currentCounter = int.Parse(currentRow.Cells[3].Value.ToString());
                 currentCounter++;
+                currentRow.Cells[3].Value = currentCounter;
             }
-            currentRow.Cells[3].Value = currentCounter;
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void nupJ1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
