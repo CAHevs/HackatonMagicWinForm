@@ -12,13 +12,14 @@ namespace HackatonMagic
 {
     public partial class AddCounter : Form
     {
-        public string _cardName { get; set; }
+        public string _cardName { get; set; } 
         public string _counterType { get; set; }
         public int _nbreCounter { get; set; }
         public AddCounter()
         {
             InitializeComponent();
 
+            // Ajout des options dans la combo box
             cbType.Items.Add("+1/+1 counter");
             cbType.Items.Add("-1/-1 counter");
             cbType.Items.Add("Charge counter");
