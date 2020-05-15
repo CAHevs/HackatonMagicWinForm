@@ -12,15 +12,15 @@ namespace HackatonMagic
 {
     public partial class Form1 : Form
     {
-
-        int pvJ1 = 20;
-        int pvJ2 = 20;
         int minute = 0;
         int hour = 0;
         int second = 0;
         public Form1()
         {
             InitializeComponent();
+            //Ajout de l'event sur le changement de valeur des NumericUpAndDown
+            nupJ1.ValueChanged += new EventHandler(lifeChanged);
+            nupJ2.ValueChanged += new EventHandler(lifeChanged);
         }
         
         // Méthode permettant de simuler un lancer de dé
@@ -34,44 +34,6 @@ namespace HackatonMagic
             value = rnd.Next(1, dice + 1);
 
             return value;
-        }
-
-        // Méthode qui enlève des points de vie au joueur 1
-        // Si les points de vie deviennent inférieur ou égal à 0, la partie s'arrête
-        private void btnMinusJ1_Click(object sender, EventArgs e)
-        {
-            pvJ1--;
-            lblPVJ1.Text = pvJ1.ToString();
-            if(pvJ1 <= 0)
-            {
-                gameEnded();
-            }
-        }
-
-        // Méthode qui ajoute des points de vie au joueur 1
-        private void btnPlusJ1_Click(object sender, EventArgs e)
-        {
-            pvJ1++;
-            lblPVJ1.Text = pvJ1.ToString();
-        }
-
-        // Méthode qui enlève des points de vie au joueur 2
-        // Si les points de vie deviennent inférieur ou égal à 0, la partie s'arrête
-        private void btnMinusJ2_Click(object sender, EventArgs e)
-        {
-            pvJ2--;
-            lblPVJ2.Text = pvJ2.ToString();
-            if(pvJ2 <= 0)
-            {
-                gameEnded();
-            }
-        }
-
-        // Méthode qui ajoute des points de vie au joueur 2
-        private void btnPlusJ2_Click(object sender, EventArgs e)
-        {
-            pvJ2++;
-            lblPVJ2.Text = pvJ2.ToString();
         }
 
         // Méthode qui permet de "démarrer" une partie. Ajoute un Event sur le timer
@@ -97,6 +59,16 @@ namespace HackatonMagic
                 minute = 0;
             }
             lblTime.Text = hour.ToString() + ":" + minute.ToString() + ":" + second.ToString();
+
+        }
+
+        // Méthode qui permet de vérifier, lors du changement de valeur de point de vie si l'un des deux joueurs a perdu
+        private void lifeChanged(object sender, EventArgs e)
+        {
+            if (nupJ1.Value <= 0 || nupJ2.Value <= 0)
+            {
+                gameEnded();
+            }
         }
 
         // Méthode qui permet de finir la partie et de réinitialliser les points de vie et le timer
@@ -106,10 +78,7 @@ namespace HackatonMagic
             btnStart.Enabled = true;
             second = 0;
             lblTime.Text = "-";
-            pvJ1 = 20;
-            pvJ2 = 20;
-            lblPVJ1.Text = pvJ1.ToString();
-            lblPVJ2.Text = pvJ2.ToString();
+            nupJ1.Value = 20;
 
         }
 
